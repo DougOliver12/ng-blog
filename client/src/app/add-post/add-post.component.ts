@@ -40,7 +40,7 @@ export class AddPostComponent implements OnInit {
         });
       }
   	} else {
-  		alert('Title and Description required');
+  		alert('Título e descrição são obrigatórios');
   	}
   }
 

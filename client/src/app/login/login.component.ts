@@ -24,14 +24,14 @@ export class LoginComponent {
         if(result['status'] === 'success') {
           this.router.navigate(['/home']);
         } else {
-          alert('Wrong username password');
+          alert('Usuário ou senha inválidos');
         }
-        
+
       }, error => {
         console.log('error is ', error);
       });
   	} else {
-  		alert('enter user name and password');
+  		alert('Entre com seu nome de usuário e senha');
   	}
   }
 
