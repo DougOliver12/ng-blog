@@ -8,14 +8,20 @@
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
-  background-color: gray;
+  background-color: black;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
   margin-bottom: 10px;
+  color: lightgray;
+}
+.jumbotron{
+  background-color: black;
 }
 .form-signin .checkbox {
   font-weight: 400;
+  color: lightgray;
+
 }
 .form-signin .form-control {
   position: relative;
@@ -31,19 +37,21 @@
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  background-color: lightgray;
+  background-color: white;
 
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  background-color: lightgray;
+  background-color: white;
 }
 .btn-color {
- color: lightgray;
- background-color: black;
+ color: black;
+ background-color: white;
 }
 .form-signin-heading{
-  text-orientation: center;
+  text-align-last: center;
+  color: lightgray;
+
 }
