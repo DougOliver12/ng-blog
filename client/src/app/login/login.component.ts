@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { LoginService } from './login.service';
 import { User } from '../models/user.model';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -9,8 +10,15 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
   providers: [ LoginService ]
 })
-export class LoginComponent {
-
+export class LoginComponent implements OnInit, OnDestroy {
+  ngOnInit(): void {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.add('bck-img');
+  }
+  ngOnDestroy(): void {
+    const body = document.getElementsByTagName('body')[0];
+    body.classList.remove('bck-img');
+  }
   public user : User;
 
   constructor(private loginService: LoginService, private router: Router) {
