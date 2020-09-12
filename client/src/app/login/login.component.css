@@ -16,6 +16,8 @@
   color: lightgray;
 }
 .jumbotron{
+  margin-top: 0 auto;
+
   background-color: black;
 }
 .form-signin .checkbox {
@@ -86,4 +88,9 @@
 .fa-instagram {
   background: rgb(216, 128, 182);
   color: white;
+}
+.footer{
+  margin-top: 0;
+  background:black;
+
 }
