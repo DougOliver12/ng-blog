@@ -1,5 +1,6 @@
+<img class="center" src="../assets/images/full-banner1.jpg">
 <form class="form-signin">
-     <h2 class="form-signin-heading">Entrar</h2>
+     <h2 class="form-signin-heading">LOGIN</h2>
      <label for="inputEmail" class="sr-only">Usuário</label>
         <input name="email" [(ngModel)] = "user.username" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
         <label for="inputPassword" class="sr-only">Senha</label>
@@ -9,5 +10,5 @@
             <input type="checkbox" value="remember-me">Lembrar me
           </label>
         </div>
-	<button class="btn btn-lg btn-primary btn-block" (click)="validateLogin();" type="button">Entrar</button>
+	<button class="btn btn-lg btn-color btn-block" (click)="validateLogin();" type="button">Entrar</button>
 </form>
